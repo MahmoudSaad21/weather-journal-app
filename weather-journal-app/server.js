@@ -24,7 +24,6 @@ const port = 3030;
 const server = app.listen(port, () => {
     console.log(`running on localhost: ${port}`)
 });
-f
 app.get("/getInformations", getInformations);
 app.post("/saveInformations", saveInformations)
     //functionto get date
