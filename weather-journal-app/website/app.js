@@ -12,6 +12,7 @@ function performAction(e) {
 }
 const getTemperature = async(baseURL, zip, key) => {
     //Variable to compile, link and receive output
+    //change the (us) in (us&appid) if you want another country 
     const res = await fetch(baseURL + zip + ",us&appid=" + key + "&units=metric");
     try {
         //to get the information
